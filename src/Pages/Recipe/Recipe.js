@@ -8,14 +8,17 @@ import "./Recipe.css"
 //components imports
 import { useFetch } from '../../Components/Hooks/UseFetch'
 
-const Recipe = () => {
+// function improts
+import { useTheme } from '../../Components/UseThem';
 
+const Recipe = () => {
+  const {mode} = useTheme();
   const {id} = useParams();
   const {data:recipe, isPending, error} = useFetch("http://localhost:3000/recipes/" + id)
 
 
   return (
-    <div className ="recipe">
+    <div className ={`card ${mode}`}>
       {isPending && <p className ="loading">Loading...</p>}
       {error && <p className="error">An Error has occured</p>}
       {recipe && (

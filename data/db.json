@@ -47,6 +47,17 @@
       "method": "Oven",
       "cookingTime": "20 minutes ",
       "id": "hyWpF7g"
+    },
+    {
+      "title": "Apple pie",
+      "ingredients": [
+        "Apples",
+        "apple sauce",
+        "dough"
+      ],
+      "method": "oven",
+      "cookingTime": "45 minutes ",
+      "id": "253BMpb"
     }
   ]
 }

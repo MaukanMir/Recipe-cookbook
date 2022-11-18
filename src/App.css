@@ -1,3 +1,11 @@
 .App {
   min-height: 100%;
 }
+
+.App.dark{
+background-color: #333;
+}
+
+.App .light{
+  background-color: white;
+}
