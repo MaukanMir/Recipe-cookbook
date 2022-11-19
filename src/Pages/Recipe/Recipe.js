@@ -5,7 +5,7 @@ import {useParams} from "react-router-dom";
 //styling imports
 import "./Recipe.css"
 
-//components imports
+//Firestore imports here
 import { projectFirestore } from '../../firebase/config';
 // function improts
 import { useTheme } from '../../Components/UseThem';
